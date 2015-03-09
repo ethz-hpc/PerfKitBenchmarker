@@ -30,7 +30,8 @@ BENCHMARK_SETS = {
         BENCHMARK_LIST: [
             'aerospike', 'cassandra_stress', 'object_storage_service',
             'cluster_boot', 'copy_throughput', 'coremark', 'fio',
-            'hadoop_terasort', 'hpcc', 'iperf', 'mesh_network', 'mongodb',
+            'hadoop_terasort', 'hpcc', 'hpcg', 'iperf', 
+            'mesh_network', 'mongodb',
             'netperf', 'ping', 'redis', 'speccpu2006',
             'block_storage_workload', 'sysbench_oltp', 'unixbench']
     },
@@ -68,6 +69,10 @@ BENCHMARK_SETS = {
         MESSAGE: 'EcoCloud/EPFL benchmark set.',
         BENCHMARK_LIST: [STANDARD_SET]
     },
+    'ethz_hpc_set':{
+        MESSAGE: 'ETH Zurich HPC benchmark set.',
+        BENCHMARK_LIST: ['hpcc','hpcg']                        
+    },    
     'google_set': {
         MESSAGE: ('This benchmark set is maintained by Google Cloud Platform '
                   'Performance Team.'),
